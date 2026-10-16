@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "AnyModel: таблица моделей",
+  "version": "1.0.0",
+  "description": "Быстрая таблица вместо карточек каталога AnyModel: цены, ctx, статус, многокритериальная сортировка",
+  "permissions": ["storage"],
+  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" },
+  "content_scripts": [
+    {
+      "matches": ["https://anymodel.org/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
